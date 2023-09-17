@@ -145,6 +145,7 @@ static const Rule rules[] = {
     {"gnome-calendar", NULL, NULL, 0, 1, 1, -1},
     {"dolphin", NULL, NULL, 1 << 2, 0, 0, -1},
     {"Code", NULL, NULL, 1 << 3, 0, 0, -1},
+    {"VSCodium", NULL, NULL, 1 << 3, 0, 0, -1},
     {"Thunar", NULL, NULL, 1 << 2, 0, 0, -1},
     {"Spotify", NULL, NULL, 1 << 5, 0, 0, -1},
 };
