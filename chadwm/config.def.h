@@ -183,6 +183,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod4Mask
+#define MODKEY1 Mod1Mask
 #define TAGKEYS(KEY, TAG)                                                      \
   {MODKEY, KEY, view, {.ui = 1 << TAG}},                                       \
       {MODKEY | ControlMask, KEY, toggleview, {.ui = 1 << TAG}},               \
@@ -223,6 +224,7 @@ static const Key keys[] = {
     {MODKEY, XK_f, togglefullscr, {0}},
 
     {MODKEY | ControlMask, XK_w, tabmode, {-1}},
+    {MODKEY1, XK_Tab, focusstack, {.i = +1}},
     {MODKEY, XK_j, focusstack, {.i = +1}},
     {MODKEY, XK_k, focusstack, {.i = -1}},
     {MODKEY, XK_i, incnmaster, {.i = +1}},
